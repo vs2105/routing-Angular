@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-content>
+        <h3>
+            <strong> The User-Name is  {{userobj.Username}}</strong>   
+           <hr>
+            <p>The User-Role of the User is <strong>{{userobj.userRole}}</strong></p>
+
+<!-- <a href="javascript:;" [routerLink]="['/users', 3]">load july</a> -->
+<!-- <button mat-raised-button color="primary" [routerLink]="['/users',userobj.id,'edit']">Edit User</button> -->
+<button mat-raised-button color="primary"  (click)="gotoedituser()">Edit User</button>
+        </h3>
+    </mat-card-content>
+</mat-card>

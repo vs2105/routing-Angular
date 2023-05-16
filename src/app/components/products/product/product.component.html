@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-content>
+     <h3>
+     <strong> {{ProductObj.pName}}</strong>
+     </h3>
+     <hr>
+  
+       <p>
+        the producct is <strong>{{ProductObj.pName}}</strong> and product status is <strong>{{ProductObj.pStatus}}</strong>
+       </p>
+
+       <!-- <button class="btn btn-primary" [routerLink]="['/products',ProductObj.pId,'edit']">Edit Product</button> -->
+       <!-- <button mat-raised-button color="primary" [routerLink]="['/products',ProductObj.pId,'edit']">Edit Product</button> -->
+       <button mat-raised-button color="primary" (click)="onEditprod()">Edit Product</button>
+
+
+    </mat-card-content>
+</mat-card>

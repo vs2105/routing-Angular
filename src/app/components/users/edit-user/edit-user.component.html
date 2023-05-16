@@ -1,0 +1,45 @@
+
+<!-- <div class="form-group">
+     <label for="Uname">User Name</label>
+     <input type="text" class="form-control">
+ </div> -->
+
+ 
+  
+        <!-- <mat-form-field appearance="outline">
+            <mat-label>User Name</mat-label>
+            <input matInput [value]="selecteduser.Username">
+          </mat-form-field> -->
+           <!-- <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>User Name</mat-label>
+               <input> 
+
+            </mat-form-field>
+     <br>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>User id</mat-label>
+                <input>
+              </mat-form-field>  
+            
+            </form> -->
+
+           
+                    <div class="form-group">
+                        <label for="Uname">User Name*</label>
+                        <input type="text" class="form-control" [disabled]="canedit" #Uname [value]="selecteduser.Username">
+                    </div>
+                    <div class="form-group">
+                      <label for="Userrole">User Role</label>
+            <input type="text" class="form-control" [disabled]="canedit" #UserRole [value]="selecteduser.userRole"> 
+                    </div>
+             
+            <div class="text-right">
+                <button mat-raised-button color="primary"  (click)="onUserupdate(Uname,UserRole)">Update User</button>
+            </div>
+    
+
+  
+            <!-- <label for="Userrole">User Role</label>
+            <input type="text" class="form-control" #UserRole [value]="selecteduser.userRole"> -->

@@ -1,0 +1,17 @@
+<div class="row">
+   <div class="col-cm-4">
+    <ul class="list-group">
+        <li class="list-group-item"  [routerLink]="['/products',prod.pId]" 
+        [queryParams]="{canEdit:prod.Canreturn}"
+        *ngFor="let prod of productInfo" 
+        [ngClass]="{active : prod.pId === selectedprodid}" >
+          {{prod.pName}}
+        </li>
+    </ul>
+   </div>
+   <div class="col-sm-8">
+    <!-- <app-product></app-product>
+    <hr> -->
+    <!-- <button class="btn btn-primary" (click)="onClick()">go to users</button> -->
+   </div>
+</div>
